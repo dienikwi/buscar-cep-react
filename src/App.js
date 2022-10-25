@@ -15,9 +15,11 @@ function App() {
       return;
     }
     try {
-      const response = await api.get(`${input}/json`);
-      setCep(response.data);
-      setInput('');
+      const response = await fetch(`${baseUrl}/${input}/json`)
+      return await response.json().then(function (data) {
+      setCep(data);
+      setInput("");
+    })
     } catch {
       alert("Poxa, não foi possível buscar o cep...");
       setInput('');
