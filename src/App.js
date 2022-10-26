@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import api from "./service/api";
 
+import baseUrl from "./service/api";
+
 import { FiSearch } from 'react-icons/fi';
 import './estilo.css';
 

@@ -1,3 +1,3 @@
-const baseURL: "http://viacep.com.br/ws/"
+const baseUrl = 'https://viacep.com.br/ws'
 
-export default baseURL;
+export default baseUrl
